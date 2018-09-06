@@ -1,0 +1,40 @@
+.sn-banner {
+  position: relative;
+  width: 100%;
+  height: 320rem/@bsFontSize;
+  overflow: hidden;
+  ul:first-child {
+    width: 1000%;
+    -webkit-transform:  translate(-10%);
+    transform: translate(-10%);
+    li {
+      float: left;
+      width: 10%;
+      a {
+        display: block;
+        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  ul:last-child {
+    position: absolute;
+    right: 20rem/@bsFontSize;
+    bottom: 20rem/@bsFontSize;
+    li {
+      float: left;
+      width: 12rem/@bsFontSize;
+      height: 12rem/@bsFontSize;
+      border-radius: 50%;
+      margin-right: 5rem/@bsFontSize;
+      background: #fff;
+      cursor: pointer;
+      &.now {
+        background: @snColor;
+      }
+    }
+  }
+}

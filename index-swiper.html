@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Suning</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/less" href="less/index-swiper.less">
+    <style>
+        .swiper-container {
+            width: 100%;
+        }
+        .bullet {
+            width: 0.12rem;
+            height: 0.12rem;
+            border-radius: 50%;
+            margin-right: 0.05rem;
+            background: #fff;
+            cursor: pointer;
+        }
+        .bullet-active {
+            background: #fabc09;
+        }
+    </style>
+</head>
+<body>
+    <div class="sn-container">
+        <!--topbar-->
+        <header class="sn-topbar">
+            <a href="#" class="icon-category"></a>
+            <form action="#">
+                <input type="search" class="icon-search" placeholder="60寸电视免费拿">
+            </form>
+            <a href="#" class="icon-cart"></a>
+        </header>
+        <!--banner-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/banner01.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner02.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner03.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner04.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner05.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner06.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner07.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner08.jpg" alt=""></a></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <!--nav-->
+        <nav class="sn-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav02.png" alt=""></span>
+                        <p>分类2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav03.png" alt=""></span>
+                        <p>分类3</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav04.png" alt=""></span>
+                        <p>分类4</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav05.png" alt=""></span>
+                        <p>分类5</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="images/nav01.png" alt=""></span>
+                        <p>分类1</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--tabs-->
+        <div class="sn-tabs">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-reorder"></span>
+                        <p>分类</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-file-text-o"></span>
+                        <p>必抢清单</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-user"></span>
+                        <p>我的易购</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-suitcase"></span>
+                        <p>新手大礼包</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/less/less.min.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/zepto/selector.js"></script>
+    <script src="lib/swiper/js/swiper.jquery.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay:1000,
+            loop:true,
+            pagination:'.swiper-pagination',
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.adapter(@counter) when(@counter>0){
+  @media (min-width: extract(@deviceList,@counter)) {
+    html {
+      font-size: @bsFontSize / @designWidth * extract(@deviceList,@counter);
+    }
+  }
+  .adapter(@counter - 1);
+}
+.rem (@1,@2){
+  @1: @2/@bsFontSize rem;
+}

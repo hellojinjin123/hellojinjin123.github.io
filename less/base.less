@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-size: 30px;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/*版心*/
+.sn-container{
+  width: 100%;
+  min-width: extract(@deviceList,@len);
+  max-width: extract(@deviceList,1);
+  margin: 0 auto;
+  padding-top: 90rem/@bsFontSize;
+  padding-bottom: 100rem/@bsFontSize;
+}
